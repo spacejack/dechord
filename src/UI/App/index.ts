@@ -258,7 +258,7 @@ export default function App(): m.Component {
 					}
 				},
 				m('img', {
-					src: '/img/options.svg'
+					src: './img/options.svg'
 				})
 			)
 		)
