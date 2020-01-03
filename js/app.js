@@ -4378,7 +4378,7 @@ function App() {
                 optionsOpen = !optionsOpen;
             }
         }, mithril_1.default('img', {
-            src: '/img/options.svg'
+            src: './img/options.svg'
         })))
     };
 }
