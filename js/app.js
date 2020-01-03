@@ -4178,7 +4178,7 @@ const PLAY_CHORD_DURATION = 4;
 /** Render 3 octaves */
 const NUM_KEYS = 12 * 3 + 1;
 const EXAMPLES = [
-    'C', 'C7', 'D^', 'Em7', 'Fm69', 'G7b5#9', 'Ao7', 'Bm9'
+    'Db^', 'C7', 'F-7', 'Ebm7', 'Ab7', 'Db^', 'C7', 'F-7', 'E-7', 'Eb-7', 'Ab13'
 ];
 /** App component */
 function App() {
@@ -4410,7 +4410,7 @@ function Options() {
                     options.wrapTo1Octave = !options.wrapTo1Octave;
                     onChange(options);
                 }
-            }), ' Wrap notes to 1 octave')), mithril_1.default('hr'), mithril_1.default('.text-col', mithril_1.default('h3', 'DECHORD: A Jazz chord parser & player'), mithril_1.default('p', '© 2019 by ', mithril_1.default('a', { href: 'https://github.com/spacejack' }, 'spacejack'), ' | ', mithril_1.default('a', { href: 'https://github.com/spacejack/dechord' }, 'Github Repo')), mithril_1.default('p', 'By enabling audio and MIDI, you can hear the chord, as well as play along with a connected MIDI device. Note that only Chromium browsers support MIDI. Firefox may have MIDI extensions.'), mithril_1.default('p', 'Uses ', mithril_1.default('a', { href: 'https://github.com/MithrilJS/mithril.js' }, 'Mithril.js'), ' for UI and ', mithril_1.default('a', { href: 'https://github.com/tonaljs/tonal' }, 'Tonal.js'), ' for chord parsing.'), mithril_1.default('p', 'Performs some additonal convenience parsing to understand ', mithril_1.default('a', { class: 'nobr', href: 'https://irealpro.com/dwkb/chord-symbols/' }, 'iReal Pro chord symbols'), '.'), mithril_1.default('p', 'For more information on piano chords and extensions, see ', mithril_1.default('a', { class: 'nobr', href: 'https://www.thejazzpianosite.com/jazz-piano-lessons/jazz-chords/extensions-alterations/' }, 'this helpful reference'), '.')));
+            }), ' Wrap notes to 1 octave')), mithril_1.default('hr'), mithril_1.default('.text-col', mithril_1.default('h3', 'DECHORD: A Jazz chord parser & player'), mithril_1.default('p', '© 2019 by ', mithril_1.default('a', { href: 'https://github.com/spacejack' }, 'spacejack'), ' | ', mithril_1.default('a', { href: 'https://github.com/spacejack/dechord' }, 'Github Repo')), mithril_1.default('p', 'By enabling audio and MIDI, you can hear the chord, as well as play along with a connected MIDI device. Note that only Chromium browsers support MIDI. Firefox may have MIDI extensions.'), mithril_1.default('p', 'Uses ', mithril_1.default('a', { href: 'https://github.com/MithrilJS/mithril.js' }, 'Mithril.js'), ' for UI, ', mithril_1.default('a', { href: 'https://github.com/tonaljs/tonal' }, 'Tonal.js'), ' for chord parsing, and ', mithril_1.default('a', { href: 'https://github.com/surikov/webaudiofont' }, ' WebAudioFontPlayer'), ' for instrument sounds.'), mithril_1.default('p', 'Performs some additonal convenience parsing to understand ', mithril_1.default('a', { class: 'nobr', href: 'https://irealpro.com/dwkb/chord-symbols/' }, 'iReal Pro chord symbols'), '.'), mithril_1.default('p', 'For more information on piano chords and extensions, see ', mithril_1.default('a', { class: 'nobr', href: 'https://www.thejazzpianosite.com/jazz-piano-lessons/jazz-chords/extensions-alterations/' }, 'this helpful reference'), '.')));
         }
     };
 }
