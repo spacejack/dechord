@@ -84,3 +84,4 @@ testem.log
 
 # compiled output
 /public/js/app.js
+/public/css/app.css
