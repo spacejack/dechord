@@ -1,0 +1,53 @@
+{
+  "name": "dechord",
+  "version": "0.1.0",
+  "description": "Chord Decoder",
+  "keywords": [
+    "piano",
+    "keyboard",
+    "jazz",
+    "chords"
+  ],
+  "author": "Mike Linkovich",
+  "license": "CC-BY-NC-4.0",
+  "repository": "https://github.com/spacejack/dechord",
+  "main": "index.js",
+  "scripts": {
+    "compile:ts": "browserify --debug src/main.ts -p [ tsify --project src/tsconfig.json ] -o public/js/app.js",
+    "compile:pcss": "postcss src/UI/index.pcss -o public/css/app.css",
+    "watch:ts": "watchify -v --debug src/main.ts -p [ tsify --project src/tsconfig.json ] -o public/js/app.js",
+    "watch:pcss": "postcss src/UI/index.pcss --watch --verbose -o public/css/app.css",
+    "build:ts": "browserify src/main.ts -p [ tsify --project src/tsconfig.json ] | uglifyjs -cm -o public/js/app.js",
+    "build:pcss": "postcss src/UI/index.pcss --env production -o public/css/app.css",
+    "clean:ts": "rm -f public/js/app.js",
+    "clean:pcss": "rm -f public/css/app.css",
+    "compile": "run-s compile:*",
+    "build": "run-s build:*",
+    "clean": "run-s clean:*",
+    "serve": "budo src/main.ts:js/app.js -p 3000 --dir public --live=*.{html,css} -- --debug -p [ browserify-hmr ] -p [ tsify --project src/tsconfig.json ]",
+    "start": "run-p watch:pcss serve"
+  },
+  "dependencies": {
+    "@tonaljs/chord": "^3.3.0",
+    "@tonaljs/midi": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/mithril": "^2.0.2",
+    "autoprefixer": "^9.7.3",
+    "browserify-hmr": "^0.4.1",
+    "budo": "^11.6.3",
+    "mithril": "^2.0.4",
+    "npm-run-all": "^4.1.5",
+    "postcss-clean": "^1.1.0",
+    "postcss-cli": "^6.1.3",
+    "postcss-custom-properties": "^9.0.2",
+    "postcss-import": "^12.0.1",
+    "postcss-nesting": "^7.0.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "tsify": "^4.0.1",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.4",
+    "uglify-js": "^3.7.3",
+    "watchify": "^3.11.1"
+  }
+}

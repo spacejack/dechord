@@ -1,0 +1,7 @@
+{
+  "extends": "stylelint-config-recommended",
+  defaultSeverity: "warning",
+  "rules": {
+    "selector-nested-pattern": "^&"
+  }
+}

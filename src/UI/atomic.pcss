@@ -1,0 +1,126 @@
+/* Common global classes */
+
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+
+.va-top {
+	vertical-align: top;
+}
+
+.nobr {
+	white-space: nowrap;
+}
+.lbr {
+	white-space: pre-line;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.large {
+	font-size: 1.5em;
+}
+.small {
+	font-size: 0.75em;
+}
+.tiny {
+	font-size: 0.5em;
+}
+
+.light {
+	color: #888;
+}
+
+.mb1 {
+	margin-bottom: 1em;
+}
+.mb05 {
+	margin-bottom: 0.5em;
+}
+
+.mt1 {
+	margin-top: 1em;
+}
+.mt05 {
+	margin-top: 0.5em;
+}
+
+.ml1 {
+	margin-left: 1em;
+}
+.ml05 {
+	margin-left: 0.5em;
+}
+
+.pb1 {
+	padding-bottom: 1em;
+}
+
+.pt1 {
+	padding-top: 1em;
+}
+.pt05 {
+	padding-top: 0.5em;
+}
+
+.pl1 {
+	padding-left: 1em;
+}
+
+.pr1 {
+	padding-right: 1em;
+}
+
+.w50 {
+	width: 50%;
+}
+
+.spacer {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+}
+
+.mono {
+	font-family: monospace;
+}
+
+.error {
+	color: #C00;
+}
+
+.clickable {
+	cursor: pointer;
+	user-select: none;
+}
+
+.fx-c {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fx-jc {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Container for buttons that applies spacing between buttons */
+.buttons {
+	& > button {
+		margin-left: 1em;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}

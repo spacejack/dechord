@@ -1,0 +1,113 @@
+/* Element styles */
+
+body {
+	color: var(--clr-fg);
+	background-color: var(--clr-bg);
+	font-size: 16px;
+}
+
+body, td, th, button, select, input {
+	font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: din-bold, sans-serif;
+	font-weight: normal;
+	margin: 0 0 0.5em 0;
+	user-select: none;
+}
+
+p {
+	margin: 0 0 0.5em 0;
+}
+
+a {
+	color: #B00;
+	cursor: pointer;
+}
+a:hover,a:active {
+	color: var(--clr-red-hi);
+}
+
+hr {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+button, input, select, textarea {
+	font-size: 1em;
+	font-family: sans-serif;
+	color: var(--clr-fg);
+	&:disabled {
+		opacity: 0.675;
+		cursor: default;
+	}
+}
+
+button,
+select,
+textarea,
+input[type=text],
+input[type=number],
+input[type=tel],
+input[type=url],
+input[type=search],
+input[type=password],
+input[type=email] {
+	border: 1px solid var(--clr-border);
+	padding: 0.5em;
+}
+
+textarea,
+input[type=text],
+input[type=number],
+input[type=tel],
+input[type=url],
+input[type=search],
+input[type=password],
+input[type=email] {
+	background-color: var(--clr-txti-bg);
+	&:focus {
+		background-color: var(--clr-txti-bg-focus);
+	}
+	&:disabled {
+		background-color: var(--clr-bg);
+	}
+}
+
+input[type=search] {
+	background: url('../img/magnifying-glass.svg');
+	background-size: 1em;
+	background-repeat: no-repeat;
+	background-position: 0.2em center;
+	padding-left: 1.75em;
+}
+
+button {
+	border: 1px solid var(--clr-fg);
+	color: var(--clr-bg);
+	background-color: var(--clr-fg);
+	&:hover, &:active {
+		background-color: var(--clr-fg-hi);
+	}
+	&:disabled {
+		background-color: var(--clr-fg);
+	}
+}
+
+textarea {
+}
+
+select {
+	padding: 0.5em 2.5em 0.5em 0.75em;
+	border-radius: 0;
+	cursor: pointer;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+main {
+	padding: 1em;
+}
