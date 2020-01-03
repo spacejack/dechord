@@ -47,8 +47,8 @@ export default function Options(): m.Component<Attrs> {
 					m('p', 'By enabling audio and MIDI, you can hear the chord, as well as play along with a connected MIDI device. Note that only Chromium browsers support MIDI. Firefox may have MIDI extensions.'),
 					m('p', 'Uses ',
 						m('a', {href: 'https://github.com/MithrilJS/mithril.js'}, 'Mithril.js'),
-						' for UI and ', m('a', {href: 'https://github.com/tonaljs/tonal'}, 'Tonal.js'),
-						' for chord parsing.'
+						' for UI, ', m('a', {href: 'https://github.com/tonaljs/tonal'}, 'Tonal.js'),
+						' for chord parsing, and ', m('a', {href: 'https://github.com/surikov/webaudiofont'}, ' WebAudioFontPlayer'), ' for instrument sounds.'
 					),
 					m('p', 'Performs some additonal convenience parsing to understand ',
 						m('a', {class: 'nobr', href: 'https://irealpro.com/dwkb/chord-symbols/'}, 'iReal Pro chord symbols'),

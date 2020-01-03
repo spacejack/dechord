@@ -26,7 +26,7 @@ const PLAY_CHORD_DURATION = 4
 const NUM_KEYS = 12 * 3 + 1
 
 const EXAMPLES = [
-	'C', 'C7', 'D^', 'Em7', 'Fm69', 'G7b5#9', 'Ao7', 'Bm9'
+	'Db^', 'C7', 'F-7', 'Ebm7', 'Ab7', 'Db^', 'C7', 'F-7', 'E-7', 'Eb-7', 'Ab13'
 ]
 
 /** App component */
